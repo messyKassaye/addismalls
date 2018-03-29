@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/top_sellers_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/card_margin"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    android:elevation="3dp"
+    card_view:cardCornerRadius="@dimen/card_album_radius"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--monaday-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/blue_textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/monday_hours_date"
+                        android:textSize="18sp"
+                        android:textColor="@color/white_textcolor"
+                        android:gravity="center"
+                        android:text="Monday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/monday_opening_hour"
+                    android:textColor="@color/white_textcolor"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--end of monday-->
+
+            <!--tuesday-->
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/blue_textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tues_hours_date"
+                        android:textSize="18sp"
+                        android:textColor="@color/white_textcolor"
+                        android:gravity="center"
+                        android:text="Tuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tues_opening_hour"
+                    android:textColor="@color/white_textcolor"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--end of monday-->
+
+
+            <!--wendsday-->
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/blue_textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/wendsday_hours_date"
+                        android:textSize="18sp"
+                        android:textColor="@color/white_textcolor"
+                        android:gravity="center"
+                        android:text="wednesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/wendsday_opening_hour"
+                    android:textColor="@color/white_textcolor"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--end of monday-->
+
+            <!--thursday-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/blue_textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/thurs_hours_date"
+                        android:textSize="18sp"
+                        android:textColor="@color/white_textcolor"
+                        android:gravity="center"
+                        android:text="Thursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/thurs_opening_hour"
+                    android:textColor="@color/white_textcolor"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--end of monday-->
+
+
+            <!--wendsday-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/blue_textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/friday_hours_date"
+                        android:textSize="18sp"
+                        android:textColor="@color/white_textcolor"
+                        android:gravity="center"
+                        android:text="Friday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/friday_opening_hour"
+                    android:textColor="@color/white_textcolor"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--end of monday-->
+
+
+            <!--wendsday-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/blue_textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/sature_hours_date"
+                        android:textSize="18sp"
+                        android:textColor="@color/white_textcolor"
+                        android:gravity="center"
+                        android:text="Saturday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sature_opening_hour"
+                    android:textColor="@color/white_textcolor"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--end of monday-->
+
+            <!--wendsday-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/blue_textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/sunday_hours_date"
+                        android:textSize="18sp"
+                        android:textColor="@color/white_textcolor"
+                        android:gravity="center"
+                        android:text="Sunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sunday_opening_hour"
+                    android:textColor="@color/white_textcolor"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--end of monday-->
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

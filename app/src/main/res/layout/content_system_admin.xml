@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.red.magazine.systemadmin.SystemAdminActivity"
+    tools:showIn="@layout/app_bar_system_admin">
+    <TextView
+        android:id="@+id/message_request"
+        android:text="@string/list_request_for_mall_registration"
+        android:textColor="@color/white_textcolor"
+        android:lineSpacingExtra="3sp"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/message_request"
+        android:id="@+id/system_admin_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

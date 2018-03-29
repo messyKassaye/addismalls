@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_user"
+            android:title="My profile" />
+        <item
+            android:id="@+id/post_sale"
+            android:icon="@mipmap/ic_post"
+            android:title="Manage sale" />
+        <item
+            android:id="@+id/post_demand"
+            android:icon="@mipmap/ic_post"
+            android:title="Manage demand" />
+        <item
+            android:id="@+id/post_supply"
+            android:icon="@mipmap/ic_post"
+            android:title="Manage supply" />
+        <item
+            android:id="@+id/add_employee"
+            android:icon="@mipmap/ic_add_user"
+            android:title="Manage employee" />
+        <item
+            android:id="@+id/show_user"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Manage stock" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

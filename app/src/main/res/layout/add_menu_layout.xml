@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menu_image"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+        <ImageView
+            android:id="@+id/background_image"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"/>
+        <Button
+            android:id="@+id/send_menu_image"
+            android:layout_width="match_parent"
+            android:background="@drawable/home_button_trans"
+            android:layout_height="56dp"
+            android:textColor="@color/white_textcolor"
+            android:text="@string/upload"
+            android:layout_alignParentBottom="true">
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/menu_pr"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:id="@+id/select_menu_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:textSize="20dp"
+           android:layout_margin="20dp"
+           android:gravity="center"
+           android:textColor="@color/white_textcolor"
+           android:layout_height="wrap_content"
+           android:text="@string/select_image" />
+
+       <Button
+           android:background="@drawable/home_button"
+           android:text="@string/upload"
+           android:textColor="@color/white_textcolor"
+           android:layout_margin="30dp"
+           android:id="@+id/upload_menu"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+   </LinearLayout>
+</LinearLayout>

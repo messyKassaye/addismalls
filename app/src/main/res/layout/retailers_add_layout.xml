@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.red.magazine.malls.admin.mallAdminfragments.AddNewRetailers">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white_textcolor"
+                    android:layout_height="match_parent"
+                    android:text="@string/profile_completion" />
+                <EditText
+                    android:id="@+id/retailers_tin_no_edittext"
+                    android:textColor="@color/white_textcolor"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:hint="@string/new_retailers_tin_no"
+                    android:textColorHint="@color/hint_color"
+                    android:background="@drawable/text_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/retailers_password"
+                    android:textColor="@color/white_textcolor"
+                    android:paddingLeft="15dp"
+                    android:hint="@string/create_reatiler_password"
+                    android:textColorHint="@color/hint_color"
+                    android:background="@drawable/text_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/add_new_user"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textAllCaps="true"
+                    android:background="@drawable/button_normal"
+                    android:textColor="@color/white_textcolor"
+                    android:text="@string/add_new_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/new_retailer_pr"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

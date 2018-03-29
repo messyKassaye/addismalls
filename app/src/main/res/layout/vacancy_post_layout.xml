@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:theme="@style/MyTextInputLayout"
+            android:textColorHint="@color/hint_color"
+            android:paddingTop="5dp"
+            android:id="@+id/input_layout_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/job_title"
+                android:layout_width="match_parent"
+                android:background="@drawable/text_field"
+                android:textColor="@color/white_textcolor"
+                android:textColorHint="@color/hint_color"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:hint="Job title" />
+        </android.support.design.widget.TextInputLayout>
+        <Spinner
+            android:id="@+id/job_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:foreground="@android:color/white"
+            android:padding="20dp"
+            android:popupBackground="#242424"
+            >
+        </Spinner>
+
+        <TextView
+            android:text="Select salary"
+            android:gravity="left"
+            android:textColor="@color/white_textcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/salary_Layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/group"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/negotiable"
+                    android:text="Negotiable"
+                    android:textColor="@color/white_textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/fixed_salary"
+                    android:text="Fixed salary"
+                    android:textColor="@color/white_textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fixed_salary_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:theme="@style/MyTextInputLayout"
+                android:textColorHint="@color/hint_color"
+                android:paddingTop="5dp"
+                android:id="@+id/input_layout_prices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fixed_salary_value"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/text_field"
+                    android:textColor="@color/white_textcolor"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:hint="enter salary" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/employment_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:foreground="@android:color/white"
+            android:padding="20dp"
+            android:popupBackground="#242424"
+            >
+        </Spinner>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:theme="@style/MyTextInputLayout"
+            android:textColorHint="@color/hint_color"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/educational_level"
+                android:layout_width="match_parent"
+                android:background="@drawable/text_field"
+                android:textColor="@color/white_textcolor"
+                android:textColorHint="@color/hint_color"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:hint="Educational level" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:theme="@style/MyTextInputLayout"
+            android:textColorHint="@color/hint_color"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/years_exp"
+                android:layout_width="match_parent"
+                android:background="@drawable/text_field"
+                android:textColor="@color/white_textcolor"
+                android:textColorHint="@color/hint_color"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:hint="Experience" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:theme="@style/MyTextInputLayout"
+            android:textColorHint="@color/hint_color"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/more_info_how_to_apply"
+                android:layout_width="match_parent"
+                android:background="@drawable/text_field"
+                android:textColor="@color/white_textcolor"
+                android:textColorHint="@color/hint_color"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:hint="more info on How to apply" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:theme="@style/MyTextInputLayout"
+            android:textColorHint="@color/hint_color"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/dead_line"
+                android:layout_width="match_parent"
+                android:background="@drawable/text_field"
+                android:textColor="@color/white_textcolor"
+                android:textColorHint="@color/hint_color"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:hint="dead line" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/post_vacancy"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_normal"
+            android:text="Post vacancy"
+            android:textColor="@color/white_textcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

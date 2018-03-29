@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.red.magazine.suppliers.fragments.Suppliers_home">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:tabIndicatorColor="#ff00ff"
+        app:tabSelectedTextColor="@color/white_textcolor"
+        app:tabPadding="5dp"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tabs"
+        android:id="@+id/supplier_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+        android:id="@+id/supplier_pr"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

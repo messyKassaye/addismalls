@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.red.magazine.malls.admin.mallAdminfragments.MallGuider">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--left item verifications layout-->
+        <LinearLayout
+            android:id="@+id/left_item_layout"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/well_come"
+                android:layout_margin="20dp"
+                android:textSize="25dp"
+                android:textColor="@color/white_textcolor"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- mall photo uploading-->
+            <LinearLayout
+                android:id="@+id/mall_photo_upload_layout"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/upload_mall_photo"
+                    android:textColor="@color/white_textcolor"
+                    android:lineSpacingExtra="5dp"
+                    android:gravity="start"
+                    android:text="@string/not_mall_photo_uploaded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:text="@string/upload_Undline"
+                        android:textColor="@color/blue_textcolor"
+                        android:id="@+id/upload_mall_photo_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/uploaded_photo_name"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- address of the mall-->
+            <LinearLayout
+                android:id="@+id/address_added_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/address_not_added_text"
+                    android:text="@string/specific_address_not_addedd"
+                    android:textColor="@color/white_textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/add_specific_name"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/add_specific_address"
+                    android:textColor="@color/blue_textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:gravity="start"
+                android:id="@+id/specific_name_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="text"
+                    android:textColor="@color/white_textcolor"
+                    android:textColorHint="@color/hint_color"
+                    android:hint="@string/specific_name"
+                    android:id="@+id/specific_name_edittext"
+                    android:background="@drawable/text_field"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:gravity="end"
+                    android:textColor="@color/white_textcolor"
+                    android:id="@+id/add_specific_name_btn"
+                    android:text="@string/add_specifif_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--end of left item verifications layout-->
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/dashboard_pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</FrameLayout>

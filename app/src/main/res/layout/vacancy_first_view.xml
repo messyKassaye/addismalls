@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/white_textcolor"
+        android:layout_height="wrap_content"
+        android:text="@string/on_mind" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/add_vacancy"
+            android:textColor="@color/white_textcolor"
+            android:text="Post new Vacancy"
+            android:background="@drawable/home_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/manage_vacancys"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_textcolor"
+            android:text="Manage Vacancy"
+            android:background="@drawable/home_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

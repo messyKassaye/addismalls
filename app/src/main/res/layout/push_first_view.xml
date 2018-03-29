@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/referral_code"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="15dp"
+            android:hint="@string/your_referral_code"
+            android:textColor="@color/white_textcolor"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/hint_color"
+            android:background="@drawable/text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/send_push"
+            android:layout_marginTop="20dp"
+            android:text="@string/send_push"
+            android:textColor="@color/white_textcolor"
+            android:background="@drawable/button_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>

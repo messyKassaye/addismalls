@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- viewpager slider layout-->
+            <LinearLayout
+                android:id="@+id/sponsor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/sponsors_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+            </LinearLayout>
+            <!-- end of viewpager slider layout-->
+
+
+            <!-- top mall layout-->
+            <RelativeLayout
+                android:layout_below="@+id/sponsor_layout"
+                android:layout_marginTop="10dp"
+                android:id="@+id/topmalls_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/topmalls_top_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/topmall"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white_textcolor"
+                        android:textAllCaps="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/viewall"
+                        android:id="@+id/topmall_viewall"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/blue_textcolor"
+                        android:textAllCaps="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@id/topmalls_top_layout"
+                    android:id="@+id/top_malls_recyclverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            <!--end of top mall layout-->
+
+            <!--top sellers layout-->
+            <RelativeLayout
+                android:id="@+id/topsellers_layout"
+                android:layout_below="@id/topmalls_layout"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/topsellers_top_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/topsellers"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white_textcolor"
+                        android:textAllCaps="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/viewall"
+                        android:id="@+id/topsell_viewall"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/blue_textcolor"
+                        android:textAllCaps="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/topsellers_top_layout"
+                    android:id="@+id/top_sellers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            <!--end top sellers layout-->
+
+
+            <!--category starts here-->
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/topsellers_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/category_top_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/white_textcolor"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:textAllCaps="true"
+                        android:text="@string/category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/category_top_layout"
+                    android:id="@+id/category_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            <!--end of category starts layout-->
+        </RelativeLayout>
+</LinearLayout>

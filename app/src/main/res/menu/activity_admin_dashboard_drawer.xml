@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_profile"
+            android:icon="@mipmap/ic_profiles"
+            android:title="@string/my_profile" />
+        <item
+            android:id="@+id/manage_retailers"
+            android:icon="@mipmap/ic_user"
+            android:title="Manage tenant" />
+        <item
+            android:id="@+id/manage_lease_space"
+            android:icon="@mipmap/ic_lease_space"
+            android:title="Manage lease space" />
+
+        <item
+            android:id="@+id/manage_vacany"
+            android:icon="@mipmap/ic_vacancy"
+            android:title="Manage vacancy" />
+
+        <item
+            android:id="@+id/manage_news_and_events"
+            android:icon="@mipmap/ic_events"
+            android:title="Manage news and events" />
+        <item
+            android:id="@+id/my_photo"
+            android:icon="@mipmap/ic_photos"
+            android:title="Manage layout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@mipmap/ic_helps"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/ic_settings"
+                android:title="Setting" />
+        </menu>
+    </item>
+
+</menu>

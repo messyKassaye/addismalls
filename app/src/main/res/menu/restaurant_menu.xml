@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_user"
+            android:title="My profile" />
+        <item
+            android:id="@+id/post_menu"
+            android:icon="@mipmap/ic_menu"
+            android:title="Manage menu" />
+        <item
+            android:id="@+id/manage_dishes"
+            android:icon="@mipmap/ic_special"
+            android:title="Manage dishes" />
+        <item
+            android:id="@+id/manage_ambience"
+            android:icon="@mipmap/ic_demand"
+            android:title="Manage ambience's" />
+
+        <item
+            android:id="@+id/daily_demand"
+            android:icon="@mipmap/ic_add_product"
+            android:title="Manage daily demand" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/ic_setting"
+                android:title="Setting" />
+        </menu>
+    </item>
+</menu>

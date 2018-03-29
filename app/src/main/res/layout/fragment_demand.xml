@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.red.magazine.serviceproviders.fragments.DemandFragment">
+
+    <ViewFlipper
+        android:id="@+id/demand_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ViewFlipper>
+</LinearLayout>

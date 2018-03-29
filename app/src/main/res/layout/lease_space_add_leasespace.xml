@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/lease_space_photo"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_cover_height" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:theme="@style/MyTextInputLayout"
+                android:textColorHint="@color/hint_color"
+                android:paddingTop="5dp"
+                android:id="@+id/input_layout_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/lease_floor_no"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/text_field"
+                    android:textColor="@color/white_textcolor"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:hint="Lease space floor no" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:theme="@style/MyTextInputLayout"
+                android:textColorHint="@color/hint_color"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/lease_area"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/text_field"
+                    android:textColor="@color/white_textcolor"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:hint="Lease space area" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:theme="@style/MyTextInputLayout"
+                android:textColorHint="@color/hint_color"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/lease_purpose"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/text_field"
+                    android:textColor="@color/white_textcolor"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:hint="Lease space purpose" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/shipper_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/hint_color"
+                android:paddingTop="5dp"
+                android:background="@drawable/custom_border"
+                android:theme="@style/MyTextInputLayout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+                <EditText
+                    android:id="@+id/lease_space_descr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:textColor="@color/white_textcolor"
+                    android:textColorHint="@color/hint_color"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="Add some description about your lease space"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/lease_space_buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="16dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:textColor="@color/white_textcolor"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lease_space_info" />
+                <Button
+                    android:id="@+id/upload_lease_space"
+                    android:textColor="@color/white_textcolor"
+                    android:text="Upload"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/home_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:background="@drawable/button_normal"
+                android:text="Post lease space"
+                android:textColor="@color/white_textcolor"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="true"
+                android:id="@+id/post_lease_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:id="@+id/lease_pr"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</ScrollView>

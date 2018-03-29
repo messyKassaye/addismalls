@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/lease_space_photo"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/album_cover_height"
+        android:layout_height="@dimen/album_cover_height" />
+
+    <TextView
+        android:id="@+id/lease_space_descr"
+        android:textColor="@color/white_textcolor"
+        android:layout_toRightOf="@+id/lease_space_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lease_space_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/leasespace_edit"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/ic_edit"
+            android:text="edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/leasespace_delete"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/ic_delete"
+            android:text="delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_below="@+id/lease_space_photo"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"/>
+    </LinearLayout>
+</RelativeLayout>

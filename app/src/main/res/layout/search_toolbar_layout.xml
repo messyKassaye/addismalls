@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <RelativeLayout
+           android:id="@+id/title_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_alignParentLeft="true"
+               android:textSize="18sp"
+               android:id="@+id/title_text"
+               android:textColor="@color/white_textcolor"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <ImageView
+               android:id="@+id/search_icon"
+               android:src="@android:drawable/ic_menu_search"
+               android:layout_alignParentRight="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/search_edit"
+            android:hint="Search"
+            android:textColorHint="@color/hint_color"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:layout_height="wrap_content" >
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

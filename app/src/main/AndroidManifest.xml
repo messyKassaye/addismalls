@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.red.magazine">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="com.example.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".malls.MallActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".topsellers.TopSellersActivity" />
+        <activity
+            android:name=".topsellers.ServiceProviderNavigation"
+            android:label="@string/title_activity_service_provider_navigation"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".categories.CategoriesActivity"
+            android:label="@string/title_activity_categories"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".malls.admin.MallAdminDashboard"
+            android:label="@string/title_activity_admin_dashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".systemadmin.SystemAdminActivity"
+            android:label="@string/title_activity_system_admin"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".serviceproviders.ServiceProvidersDashBoard"
+            android:label="@string/title_activity_service_providers_dash_board"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".suppliers.SuppliersDrawer"
+            android:label="@string/title_activity_suppliers_drawer"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ViewAllMalls" />
+        <activity
+            android:name=".malls.ui.VacancyActivity"
+            android:label="@string/title_activity_vacancy"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Push.Push"
+            android:label="@string/title_activity_push"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".hotels.admin.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".hotels.HotelOuter"
+            android:label="@string/title_activity_hotel_outer"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".agents.jobAgent.JobAgents"
+            android:label="@string/title_activity_job_agents"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".agents.companyAgent.CompanyAgent"
+            android:label="@string/title_activity_company_agent"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ViewAllHotels"
+            android:label="@string/title_activity_view_all_hotels"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ViewAllCafeAndRes"
+            android:label="@string/title_activity_view_all_cafe_and_res"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".hotels.RoomsDetails"
+            android:label="@string/title_activity_rooms_details"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cafeandres.CafeAndRestaurantActivity"
+            android:label="@string/title_activity_cafe_and_restaurant"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".OuterVacancy"
+            android:label="@string/title_activity_outer_vacancy"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainOuterLeaseSpace"
+            android:label="@string/title_activity_outer_lease_space"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".cafeandres.MenuDisplayer" />
+        <activity android:name=".SponsorsDetail"></activity>
+    </application>
+
+</manifest>

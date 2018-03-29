@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:visibility="gone"
+                   android:id="@+id/dish_image_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <ImageView
+                       android:id="@+id/dishe_image"
+                       android:scaleType="fitXY"
+                       android:layout_width="match_parent"
+                       android:layout_height="200dp" />
+                   <RelativeLayout
+                       android:padding="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:id="@+id/backtomain"
+                           android:text="@string/back"
+                           android:textColor="@color/blue_textcolor"
+                           android:layout_alignParentLeft="true"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                       <TextView
+                           android:id="@+id/upload_new_dish"
+                           android:text="@string/new_dish"
+                           android:textColor="@color/blue_textcolor"
+                           android:layout_alignParentRight="true"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                   </RelativeLayout>
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:id="@+id/dish_selection_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:text="@string/select_dish"
+                       android:textColor="@color/white_textcolor"
+                       android:gravity="center"
+                       android:textSize="20sp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:id="@+id/select_dishe_image"
+                       android:text="@string/upload"
+                       android:gravity="center"
+                       android:textColor="@color/blue_textcolor"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_margin="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_marginTop="10dp"
+                       android:theme="@style/MyTextInputLayout"
+                       android:textColorHint="@color/hint_color"
+                       android:paddingTop="5dp"
+                       android:id="@+id/input_layout_price"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <EditText
+                           android:id="@+id/dish_name"
+                           android:layout_width="match_parent"
+                           android:background="@drawable/text_field"
+                           android:textColor="@color/white_textcolor"
+                           android:textColorHint="@color/hint_color"
+                           android:layout_height="wrap_content"
+                           android:paddingLeft="15dp"
+                           android:hint="@string/hint_dish_name" />
+                   </android.support.design.widget.TextInputLayout>
+
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_marginTop="10dp"
+                       android:theme="@style/MyTextInputLayout"
+                       android:textColorHint="@color/hint_color"
+                       android:paddingTop="5dp"
+                       android:id="@+id/dish_price_layout"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <EditText
+                           android:id="@+id/dish_pric"
+                           android:layout_width="match_parent"
+                           android:background="@drawable/text_field"
+                           android:textColor="@color/white_textcolor"
+                           android:textColorHint="@color/hint_color"
+                           android:layout_height="wrap_content"
+                           android:paddingLeft="15dp"
+                           android:hint="@string/hint_dish_price" />
+                   </android.support.design.widget.TextInputLayout>
+
+                   <android.support.design.widget.TextInputLayout
+                       android:id="@+id/dish_description"
+                       android:layout_width="match_parent"
+                       android:layout_height="150dp"
+                       android:layout_marginLeft="8dp"
+                       android:layout_marginRight="8dp"
+                       android:layout_marginTop="8dp"
+                       android:paddingTop="5dp"
+                       android:textColorHint="@color/hint_color"
+                       android:background="@drawable/custom_border"
+                       android:theme="@style/MyTextInputLayout"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginEnd="8dp">
+
+                       <EditText
+                           android:id="@+id/describe_your_dish"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:padding="15dp"
+                           android:textColor="@color/white_textcolor"
+                           android:textColorHint="@color/hint_color"
+                           android:background="@null"
+                           android:gravity="top"
+                           android:hint="@string/describe_dish"
+                           android:inputType="textMultiLine"
+                           android:overScrollMode="always"
+                           android:scrollbarStyle="insideInset"
+                           android:scrollbars="vertical" />
+                   </android.support.design.widget.TextInputLayout>
+
+                   <Button
+                       android:visibility="gone"
+                       android:id="@+id/post_dish"
+                       android:layout_marginTop="20dp"
+                       android:text="@string/post_dish"
+                       android:background="@drawable/button_normal"
+                       android:textColor="@color/white_textcolor"
+                       android:textAllCaps="true"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+
+               </LinearLayout>
+           </LinearLayout>
+
+           <ProgressBar
+               android:id="@+id/dish_pr"
+               android:visibility="gone"
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

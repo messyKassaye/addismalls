@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="50dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+      android:textSize="25sp"
+      android:text="Hello,"
+      android:layout_margin="20dp"
+      android:gravity="center"
+      android:id="@+id/hello_user"
+      android:textColor="@color/white_textcolor"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="left"
+        android:lineSpacingExtra="5sp"
+        android:layout_margin="20dp"
+        android:id="@+id/success_message"
+        android:textColor="@color/blue_textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

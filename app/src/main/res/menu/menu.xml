@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/useful_info"
+        android:orderInCategory="80"
+        app:showAsAction="never"
+        android:title="Useful info" />
+
+    <item
+        android:id="@+id/lang"
+        android:orderInCategory="90"
+        app:showAsAction="never"
+        android:title="Language" />
+    <item
+        android:id="@+id/menu_main_setting"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Setting" />
+
+    <item
+        android:id="@+id/menu_main_setting2"
+        android:orderInCategory="110"
+        app:showAsAction="never"
+        android:title="Help" />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="150"
+        android:icon="@mipmap/share"
+        app:showAsAction="never"
+        android:title="Share" />
+</menu>

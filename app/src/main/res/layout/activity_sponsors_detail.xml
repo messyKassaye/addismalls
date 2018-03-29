@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.example.red.magazine.SponsorsDetail">
+    <include layout="@layout/tool_bar" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/toolbar"/>
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/nested_scrollview"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <ImageView
+           android:id="@+id/sponsored_company_logo"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/album_cover_height"
+           android:background="?attr/selectableItemBackgroundBorderless"
+           android:clickable="true"
+           android:scaleType="fitXY" />
+
+       <TextView
+           android:id="@+id/sponsors_description"
+           android:textColor="@color/white"
+           android:layout_marginLeft="5dp"
+           android:textSize="18sp"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+        <!-- top mall layout-->
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/topmalls_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:id="@+id/topmalls_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Branches"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/blue_textcolor"
+                    android:textAllCaps="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/topmalls_top_layout"
+                android:id="@+id/sponsors_branach_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+        <!--&lt;!&ndash;end of top mall layout&ndash;&gt;-->
+        <!--<TextView-->
+            <!--android:text="People say about us"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:textColor="@color/blue_textcolor"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:gravity="left"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--&lt;!&ndash; viewpager slider layout&ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/sponsor_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/people_say_about_us"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="120dp"/>-->
+        <!--</LinearLayout>-->
+        <!--&lt;!&ndash; end of viewpager slider layout&ndash;&gt;-->
+
+
+
+       <TextView
+           android:text="Amenities"
+           android:textColor="@color/blue_textcolor"
+           android:gravity="left"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/topmalls_top_layout"
+            android:id="@+id/sponsors_amenity_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+
+
+   </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

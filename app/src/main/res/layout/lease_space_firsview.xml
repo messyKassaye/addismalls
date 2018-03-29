@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/post_first_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/white_textcolor"
+        android:layout_height="wrap_content"
+        android:text="@string/on_mind" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/add_lease_space"
+            android:textColor="@color/white_textcolor"
+            android:text="Add new lease space"
+            android:background="@drawable/home_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/manage_lease_space"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_textcolor"
+            android:text="Manage Lease space"
+            android:background="@drawable/home_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

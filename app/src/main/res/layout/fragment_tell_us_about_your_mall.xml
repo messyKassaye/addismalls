@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.red.magazine.fragments.TellUsAboutYourMallFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/tell_us_about_your_mall"
+            android:textColor="@color/white_textcolor"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="200dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"/>
+
+        <EditText
+            android:id="@+id/mall_name"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="15dp"
+            android:hint="@string/mall_name"
+            android:textColorHint="@color/hint_color"
+            android:background="@drawable/text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/tin_no"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="15dp"
+            android:hint="@string/tin_no"
+            android:textColorHint="@color/hint_color"
+            android:background="@drawable/text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="15dp"
+            android:hint="@string/city"
+            android:textColorHint="@color/hint_color"
+            android:background="@drawable/text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/no_of_floors"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="15dp"
+            android:hint="@string/no_of_floors"
+            android:textColorHint="@color/hint_color"
+            android:background="@drawable/text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

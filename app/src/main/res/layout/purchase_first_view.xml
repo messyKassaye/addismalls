@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.example.red.magazine.MainActivity">
+   <ScrollView
+        android:id="@+id/nested_scrollview"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- viewpager slider layout
+            <LinearLayout
+                android:id="@+id/sponsor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+               <android.support.v4.view.ViewPager
+                   android:id="@+id/purchase_viewpager"
+                   android:layout_width="match_parent"
+                   android:layout_height="120dp"/>
+            </LinearLayout>
+             end of viewpager slider layout-->
+
+            <ImageView
+                android:id="@+id/purchase_product_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_cover_height"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+            <TextView
+                android:id="@+id/purchasing_product_name"
+                android:textSize="16sp"
+                android:textColor="@color/white_textcolor"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/purchasing_price"
+                android:textSize="16sp"
+                android:textColor="@color/white_textcolor"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/purchasing_description"
+                android:textSize="16sp"
+                android:textColor="@color/white_textcolor"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/purchase_btn"
+                    android:textColor="@color/white_textcolor"
+                    android:text="Purchase"
+                    android:background="@drawable/button_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/subscribe_info"
+                    android:text="@string/subscribe_info"
+                    android:textSize="13sp"
+                    android:textColor="@color/white_textcolor"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/subscribe_btn"
+                    android:textColor="@color/white_textcolor"
+                    android:text="Subscribe"
+                    android:background="@drawable/subscribe_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

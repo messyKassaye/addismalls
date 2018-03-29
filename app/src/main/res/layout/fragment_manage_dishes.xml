@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.red.magazine.serviceproviders.fragments.ManageDishes">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/white_textcolor"
+            android:layout_height="wrap_content"
+            android:text="@string/on_mind" />
+       <!-- <TextView
+            android:id="@+id/add_dishes"
+            android:textColor="@color/blue_textcolor"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/add_dishes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/manage_dishes"
+            android:layout_marginTop="5dp"
+            android:text="@string/manage_dishes"
+            android:textColor="@color/blue_textcolor"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_margin="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <Button
+               android:id="@+id/add_dishes"
+               android:textColor="@color/white_textcolor"
+               android:text="Add dishes"
+               android:background="@drawable/home_button"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <Button
+               android:id="@+id/manage_dishes"
+               android:layout_marginTop="20dp"
+               android:textColor="@color/white_textcolor"
+               android:text="Manage dishes"
+               android:background="@drawable/home_button"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

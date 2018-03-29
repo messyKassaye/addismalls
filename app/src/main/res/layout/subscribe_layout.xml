@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+      <TextView
+          android:gravity="center"
+          android:id="@+id/subscribe_email"
+          android:text="You will get notification when we post new brand of our products"
+          android:textSize="18sp"
+          android:textColor="@color/white_textcolor"
+          android:layout_marginBottom="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/subscribe_email_address"
+        android:textColor="@color/white_textcolor"
+        android:textCursorDrawable="@null"
+        android:paddingLeft="15dp"
+        android:hint="Enter your email address"
+        android:textColorHint="@color/hint_color"
+        android:background="@drawable/text_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/subscribe_me_btn"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white_textcolor"
+        android:text="Subscribe me"
+        android:background="@drawable/subscribe_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
